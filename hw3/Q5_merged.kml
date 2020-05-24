@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+
+<Style id="z1">
+<IconStyle><Icon><href>http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png</href></Icon></IconStyle>
+</Style>
+
+
+<!-- All 15 locations-->
+
+<Folder><name>Libraries</name>
+<Placemark><name>Cinematics Lib</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.283554,34.020075</coordinates></Point>
+</Placemark>
+<Placemark><name>Gerontology Lib</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.290695,34.019978</coordinates></Point>
+</Placemark>
+<Placemark><name>Gaughan Tiberti Lib</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.282525,34.018586</coordinates></Point>
+</Placemark>
+<Placemark><name>Leavey Lib</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.282789,34.021719</coordinates></Point>
+</Placemark>
+<Placemark><name>Wilson Dental Lib</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.286219,34.023958</coordinates></Point>
+</Placemark>
+</Folder>
+
+
+
+<Folder><name>Dining</name>
+<Placemark><name>Little Galen</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28709,34.022884</coordinates></Point>
+</Placemark>
+<Placemark><name>Starbucks Trojan</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.282177,34.021666</coordinates></Point>
+</Placemark>
+<Placemark><name>LiteraTea</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.283312,34.020115</coordinates></Point>
+</Placemark>
+<Placemark><name>Panda Express</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.286318,34.020283</coordinates></Point>
+</Placemark>
+<Placemark><name>Tutor Hall Cafe</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.289985,34.020044</coordinates></Point>
+</Placemark>
+</Folder>
+
+
+
+<Folder><name>Plazas</name>
+<Placemark><name>Epstein F Plaza</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.288928,34.020388</coordinates></Point>
+</Placemark>
+<Placemark><name>Noble Plaza</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.286479,34.022438</coordinates></Point>
+</Placemark>
+<Placemark><name>Ogasawara Plaza</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.290776,34.019295</coordinates></Point>
+</Placemark>
+<Placemark><name>Hahn Plaza</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.285308,34.020291</coordinates></Point>
+</Placemark>
+<Placemark><name>Martens Plaza</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.282748,34.021492</coordinates></Point>
+</Placemark>
+</Folder>
+
+
+<!-- Convex Hull-->
+
+<Folder>
+<name>Convex Hull</name>
+<Placemark> 
+<Polygon>   
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+-118.282525,34.018586,
+-118.290776,34.019295,
+-118.290695,34.019978,
+-118.286219,34.023958,
+-118.282177,34.021666,
+-118.282525,34.018586,
+</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+
+<Style> 
+<LineStyle>
+<width>1.5</width>
+</LineStyle>
+<PolyStyle>  
+<color>#7dff0000</color>
+</PolyStyle> 
+</Style>
+
+</Placemark>
+</Folder>
+
+
+<!-- Four nearest neighbors [using LineStrings]-->
+
+<Folder>
+<name>Four Nearest Neighbors</name>
+<Style id="line">
+<LineStyle>
+<width>2.5</width>
+</LineStyle>
+<PolyStyle>
+<color>#E1C340</color>
+</PolyStyle>
+</Style>
+
+<Placemark>
+<styleUrl>#line</styleUrl>
+<LineString>
+<extrude>1</extrude>
+<tessellate>1</tessellate> 
+<coordinates>-118.285308,34.020291 -118.286318,34.020283</coordinates>
+</LineString>
+</Placemark>
+
+<Placemark>
+<styleUrl>#line</styleUrl>
+<LineString>
+<extrude>1</extrude>
+<tessellate>1</tessellate> 
+<coordinates>-118.285308,34.020291 -118.283554,34.020075</coordinates>
+</LineString>
+</Placemark>
+
+<Placemark>
+<styleUrl>#line</styleUrl>
+<LineString>
+<extrude>1</extrude>
+<tessellate>1</tessellate> 
+<coordinates>-118.285308,34.020291 -118.283312,34.020115</coordinates>
+</LineString>
+</Placemark>
+
+<Placemark>
+<styleUrl>#line</styleUrl>
+<LineString>
+<extrude>1</extrude>
+<tessellate>1</tessellate> 
+<coordinates>-118.285308,34.020291 -118.286479,34.022438</coordinates>
+</LineString>
+</Placemark>
+</Folder>
+
+
+</Document>
+</kml>
